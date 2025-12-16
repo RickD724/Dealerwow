@@ -30,7 +30,11 @@ const AdminDealerDetail = () => {
   const dealerListings = listings.filter(l => l.dealerId === dealer.id);
   const totalViews = dealerListings.reduce((sum, l) => sum + l.views, 0);
   const totalUnlocks = dealerListings.reduce((sum, l) => sum + l.unlockCount, 0);
-  const revenue = totalUnlocks * 20;
+  
+  // Platform activity metrics
+  const totalListingsCount = dealerListings.length;
+  const activeListingsCount = dealerListings.filter(l => l.inventory.status === 'active').length;
+  const soldListingsCount = dealerListings.filter(l => l.inventory.status === 'sold').length;
 
   const handleApprove = () => {
     alert(`Dealer "${dealer.businessName}" has been approved. Email sent with login credentials.`);
@@ -156,10 +160,10 @@ const AdminDealerDetail = () => {
 
                 <div className="text-center">
                   <div className="bg-purple-100 rounded-lg p-4 mb-2">
-                    <DollarSign className="h-8 w-8 text-purple-600 mx-auto" />
+                    <Package className="h-8 w-8 text-purple-600 mx-auto" />
                   </div>
-                  <p className="text-3xl font-bold text-gray-900">${revenue}</p>
-                  <p className="text-sm text-gray-600">Revenue Generated</p>
+                  <p className="text-3xl font-bold text-gray-900">{totalListingsCount}</p>
+                  <p className="text-sm text-gray-600">Total Listings</p>
                 </div>
               </div>
             </div>
@@ -309,26 +313,29 @@ const AdminDealerDetail = () => {
               </div>
             </div>
 
-            {/* Revenue Generated (Platform) */}
+            {/* Platform Activity */}
             <div className="bg-white rounded-xl shadow-md p-6">
-              <h2 className="text-xl font-semibold text-gray-900 mb-4">Platform Revenue</h2>
+              <h2 className="text-xl font-semibold text-gray-900 mb-4">Platform Activity</h2>
               
-              <div className="bg-green-50 rounded-lg p-4 mb-2">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center">
-                    <DollarSign className="h-8 w-8 text-green-600 mr-2" />
-                    <div>
-                      <p className="text-2xl font-bold text-green-900">
-                        ${revenue}
-                      </p>
-                      <p className="text-sm text-green-700">From {totalUnlocks} unlocks</p>
-                    </div>
-                  </div>
+              <div className="space-y-3">
+                <div className="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                  <span className="text-gray-600">Total Listings:</span>
+                  <span className="text-2xl font-bold text-gray-900">{totalListingsCount}</span>
+                </div>
+                
+                <div className="flex justify-between items-center p-3 bg-green-50 rounded-lg">
+                  <span className="text-gray-700">Currently Active:</span>
+                  <span className="text-lg font-semibold text-green-700">{activeListingsCount}</span>
+                </div>
+                
+                <div className="flex justify-between items-center p-3 bg-blue-50 rounded-lg">
+                  <span className="text-gray-700">Sold:</span>
+                  <span className="text-lg font-semibold text-blue-700">{soldListingsCount}</span>
                 </div>
               </div>
 
-              <p className="text-xs text-gray-500">
-                Revenue generated from buyers unlocking this dealer's listings
+              <p className="text-xs text-gray-500 mt-4">
+                Total inventory posted since joining platform
               </p>
             </div>
 

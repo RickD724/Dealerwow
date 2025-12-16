@@ -43,6 +43,13 @@ const Header = () => {
               <span>Dealer Login</span>
             </Link>
             <Link 
+              to="/buyer/dashboard" 
+              className="text-gray-700 hover:text-primary-600 font-medium flex items-center space-x-1"
+            >
+              <User className="h-4 w-4" />
+              <span>Buyer Login</span>
+            </Link>
+            <Link 
               to="/buyer/signup" 
               className="btn-primary flex items-center space-x-1"
             >

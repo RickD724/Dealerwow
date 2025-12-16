@@ -239,7 +239,7 @@ const DealerListingDetail = () => {
                   <Unlock className="h-10 w-10 text-blue-600" />
                 </div>
                 <p className="text-xs text-blue-700 mt-2">
-                  Each buyer paid $20 to unlock your contact info - these are serious buyers!
+                  Buyers purchased access passes to unlock your listing - these are serious buyers!
                 </p>
               </div>
 

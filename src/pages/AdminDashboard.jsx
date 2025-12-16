@@ -41,7 +41,6 @@ const AdminDashboard = () => {
   const pendingApprovals = pendingDealers.filter(d => d.status === 'pending').length;
   const totalViews = listings.reduce((sum, l) => sum + l.views, 0);
   const totalUnlocks = listings.reduce((sum, l) => sum + l.unlockCount, 0);
-  const revenueEstimate = totalUnlocks * 20;
 
   return (
     <div className="bg-gray-50 min-h-screen py-8">
@@ -85,8 +84,8 @@ const AdminDashboard = () => {
           <div className="bg-white rounded-xl shadow-md p-6">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm text-gray-600 mb-1">Revenue (Est.)</p>
-                <p className="text-3xl font-bold text-gray-900">${revenueEstimate.toLocaleString()}</p>
+                <p className="text-sm text-gray-600 mb-1">Total Unlocks</p>
+                <p className="text-3xl font-bold text-gray-900">{totalUnlocks.toLocaleString()}</p>
               </div>
               <DollarSign className="h-10 w-10 text-purple-600" />
             </div>

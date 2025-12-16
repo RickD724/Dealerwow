@@ -194,7 +194,7 @@ const DealDetails = () => {
                   className="w-full mt-4 btn-accent flex items-center justify-center"
                 >
                   <Lock className="h-5 w-5 mr-2" />
-                  Unlock Dealer Contact - $20
+                  Unlock This Deal
                 </button>
               )}
             </div>
@@ -244,35 +244,85 @@ const DealDetails = () => {
       {/* Unlock Modal */}
       {showUnlockModal && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-          <div className="bg-white rounded-xl p-8 max-w-md w-full">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Unlock Dealer Contact</h3>
+          <div className="bg-white rounded-xl p-8 max-w-3xl w-full max-h-[90vh] overflow-y-auto">
+            <h3 className="text-2xl font-bold text-gray-900 mb-2">Choose Your Access Pass</h3>
             <p className="text-gray-600 mb-6">
-              Get instant access to this dealer's full contact information and connect directly to negotiate this deal.
+              Get time-based access to unlock any deal on the marketplace
             </p>
-            <div className="bg-gray-50 rounded-lg p-4 mb-6">
-              <div className="flex justify-between items-center mb-2">
-                <span className="text-gray-600">Unlock Fee</span>
-                <span className="text-2xl font-bold text-gray-900">$20.00</span>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+              {/* 3-Day Pass */}
+              <div className="border-2 border-gray-200 rounded-lg p-4 hover:border-primary-600 transition-colors">
+                <h4 className="font-bold text-gray-900 mb-1">3-Day Access</h4>
+                <div className="text-2xl font-bold text-gray-900 mb-2">$49.99</div>
+                <ul className="space-y-1 mb-4 text-sm text-gray-600">
+                  <li>✓ Unlock any deal</li>
+                  <li>✓ Full contact info</li>
+                  <li>✓ Complete VIN</li>
+                </ul>
+                <button 
+                  onClick={handleUnlock}
+                  className="w-full btn-primary text-sm"
+                >
+                  Get 3-Day Pass
+                </button>
               </div>
-              <p className="text-sm text-gray-500">One-time payment. No subscription required.</p>
+
+              {/* 7-Day Pass - Popular */}
+              <div className="border-2 border-primary-600 rounded-lg p-4 relative">
+                <div className="absolute -top-2 left-1/2 transform -translate-x-1/2">
+                  <span className="bg-primary-600 text-white px-2 py-0.5 rounded-full text-xs font-semibold">
+                    Popular
+                  </span>
+                </div>
+                <h4 className="font-bold text-gray-900 mb-1">7-Day Access</h4>
+                <div className="text-2xl font-bold text-gray-900 mb-2">$79.99</div>
+                <ul className="space-y-1 mb-4 text-sm text-gray-600">
+                  <li>✓ Unlock any deal</li>
+                  <li>✓ Full contact info</li>
+                  <li>✓ Complete VIN</li>
+                  <li>✓ Best value</li>
+                </ul>
+                <button 
+                  onClick={handleUnlock}
+                  className="w-full btn-primary text-sm"
+                >
+                  Get 7-Day Pass
+                </button>
+              </div>
+
+              {/* 14-Day Pass */}
+              <div className="border-2 border-gray-200 rounded-lg p-4 hover:border-primary-600 transition-colors">
+                <h4 className="font-bold text-gray-900 mb-1">14-Day Access</h4>
+                <div className="text-2xl font-bold text-gray-900 mb-2">$99.99</div>
+                <ul className="space-y-1 mb-4 text-sm text-gray-600">
+                  <li>✓ Unlock any deal</li>
+                  <li>✓ Full contact info</li>
+                  <li>✓ Complete VIN</li>
+                  <li>✓ Max flexibility</li>
+                </ul>
+                <button 
+                  onClick={handleUnlock}
+                  className="w-full btn-primary text-sm"
+                >
+                  Get 14-Day Pass
+                </button>
+              </div>
             </div>
-            <div className="space-y-3">
-              <button 
-                onClick={handleUnlock}
-                className="w-full btn-primary"
-              >
-                Pay $20 & Unlock Now
-              </button>
-              <button 
-                onClick={() => setShowUnlockModal(false)}
-                className="w-full btn-secondary"
-              >
-                Cancel
-              </button>
+
+            <div className="bg-blue-50 rounded-lg p-4 mb-4">
+              <p className="text-sm text-gray-700 text-center">
+                <strong>How it works:</strong> Your pass unlocks all deals during your active window. 
+                No subscriptions, no per-deal charges.
+              </p>
             </div>
-            <p className="text-xs text-gray-500 mt-4 text-center">
-              In production, this would process payment via Stripe
-            </p>
+
+            <button 
+              onClick={() => setShowUnlockModal(false)}
+              className="w-full btn-secondary"
+            >
+              Cancel
+            </button>
           </div>
         </div>
       )}

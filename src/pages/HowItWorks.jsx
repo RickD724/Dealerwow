@@ -50,7 +50,7 @@ const HowItWorks = () => {
                 Unlock Dealer Info
               </h3>
               <p className="text-gray-600">
-                Found the perfect deal? Pay a small fee ($20 per unlock or subscribe monthly) to reveal the dealer's contact information.
+                Purchase an access pass (starting at $49.99 for 3 days) to unlock any deal on the marketplace during your active window.
               </p>
             </div>
 

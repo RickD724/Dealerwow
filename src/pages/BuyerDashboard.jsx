@@ -6,20 +6,15 @@ import { Heart, Unlock, CreditCard, X, ExternalLink } from 'lucide-react';
 const BuyerDashboard = () => {
   const { listings, unlockedListings } = useApp();
   const [savedListings, setSavedListings] = useState(['L001', 'L003']); // Mock saved IDs
-  const [hasSubscription, setHasSubscription] = useState(true); // Mock subscription status
+  const [hasActivePass, setHasActivePass] = useState(true); // Mock access pass status
+  const [passType, setPassType] = useState('7-Day'); // Mock pass type
+  const [expirationDate, setExpirationDate] = useState('January 22, 2025'); // Mock expiration
 
   const unlockedVehicles = listings.filter(l => unlockedListings.includes(l.id));
   const savedVehicles = listings.filter(l => savedListings.includes(l.id));
 
   const handleUnsave = (listingId) => {
     setSavedListings(prev => prev.filter(id => id !== listingId));
-  };
-
-  const handleCancelSubscription = () => {
-    if (window.confirm('Are you sure you want to cancel your unlimited access subscription? You will need to pay $20 per unlock after cancellation.')) {
-      setHasSubscription(false);
-      alert('Subscription cancelled. You can still access your previously unlocked deals.');
-    }
   };
 
   return (
@@ -56,9 +51,9 @@ const BuyerDashboard = () => {
           <div className="bg-white rounded-xl shadow-md p-6">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm text-gray-600 mb-1">Subscription</p>
+                <p className="text-sm text-gray-600 mb-1">Access Status</p>
                 <p className="text-lg font-bold text-gray-900">
-                  {hasSubscription ? 'Unlimited' : 'Pay-per-unlock'}
+                  {hasActivePass ? `${passType} Pass` : 'No Active Pass'}
                 </p>
               </div>
               <CreditCard className="h-10 w-10 text-blue-600" />
@@ -66,21 +61,42 @@ const BuyerDashboard = () => {
           </div>
         </div>
 
-        {/* Subscription Card */}
-        {hasSubscription && (
+        {/* Access Pass Card */}
+        {hasActivePass ? (
           <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl shadow-md p-6 mb-8 text-white">
             <div className="flex justify-between items-center">
               <div>
-                <h3 className="text-xl font-semibold mb-2">Unlimited Access</h3>
-                <p className="text-blue-100 mb-1">$49/month - Unlimited unlocks</p>
-                <p className="text-sm text-blue-200">Next billing date: January 15, 2025</p>
+                <h3 className="text-xl font-semibold mb-2">Active Access Pass</h3>
+                <p className="text-blue-100 mb-1">{passType} Access - Unlock any deal</p>
+                <p className="text-sm text-blue-200">Expires: {expirationDate}</p>
+                <p className="text-sm text-blue-200 mt-2">
+                  Click "Unlock" on any listing to reveal dealer contact info
+                </p>
               </div>
-              <button
-                onClick={handleCancelSubscription}
+              <Link
+                to="/pricing"
                 className="px-4 py-2 bg-white/20 hover:bg-white/30 text-white rounded-lg transition-colors text-sm"
               >
-                Cancel Subscription
-              </button>
+                Renew Pass
+              </Link>
+            </div>
+          </div>
+        ) : (
+          <div className="bg-gray-100 rounded-xl shadow-md p-6 mb-8">
+            <div className="flex justify-between items-center">
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">No Active Access Pass</h3>
+                <p className="text-gray-600 mb-1">Purchase an access pass to unlock any deal on the marketplace</p>
+                <p className="text-sm text-gray-500 mt-2">
+                  Passes start at $49.99 for 3 days
+                </p>
+              </div>
+              <Link
+                to="/pricing"
+                className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-medium"
+              >
+                View Plans
+              </Link>
             </div>
           </div>
         )}
@@ -225,8 +241,9 @@ const BuyerDashboard = () => {
           <ul className="space-y-2 text-sm text-gray-700">
             <li>• Contact dealers quickly - the best deals move fast</li>
             <li>• Save your favorites to compare and track price changes</li>
-            <li>• Unlocked deals remain accessible even after canceling subscription</li>
-            <li>• Subscribe for unlimited access if you're shopping for multiple vehicles</li>
+            <li>• Your access pass lets you unlock any deal during the active window</li>
+            <li>• When your pass expires, deal details are masked again and you'll need a new pass</li>
+            <li>• Choose 7-day or 14-day passes if shopping for multiple vehicles</li>
           </ul>
         </div>
       </div>
