@@ -1,0 +1,422 @@
+{
+  "listings": [
+    {
+      "id": "L001",
+      "dealerId": "D001",
+      "dealerName": "Anonymous Dealer",
+      "dealerLocation": "Bay Area, CA",
+      "dealerVerified": true,
+      "status": "active",
+      "vehicle": {
+        "year": 2024,
+        "make": "Porsche",
+        "model": "911",
+        "trim": "Carrera GTS",
+        "vin": "WP0AB2A9*****3456",
+        "vinLast4": "3456",
+        "exteriorColor": "GT Silver Metallic",
+        "interiorColor": "Black Leather",
+        "mileage": 127,
+        "condition": "new",
+        "bodyStyle": "Coupe"
+      },
+      "pricing": {
+        "msrp": 154900,
+        "sellingPrice": 142900,
+        "discount": 12000,
+        "discountPercent": 7.7
+      },
+      "inventory": {
+        "stockNumber": "P2401234",
+        "daysInStock": 145,
+        "dateAdded": "2024-06-15"
+      },
+      "features": [
+        "Sport Chrono Package",
+        "Premium Audio",
+        "18-Way Adaptive Sports Seats",
+        "LED Matrix Headlights"
+      ],
+      "photos": [
+        "/placeholder-porsche-911.jpg"
+      ],
+      "dealHeatScore": 92,
+      "unlocked": false,
+      "views": 47,
+      "unlockCount": 3,
+      "createdAt": "2024-06-15T10:30:00Z",
+      "updatedAt": "2024-11-01T14:22:00Z"
+    },
+    {
+      "id": "L002",
+      "dealerId": "D002",
+      "dealerName": "Anonymous Dealer",
+      "dealerLocation": "Dallas, TX",
+      "dealerVerified": true,
+      "status": "active",
+      "vehicle": {
+        "year": 2024,
+        "make": "BMW",
+        "model": "M4",
+        "trim": "Competition xDrive",
+        "vin": "WBS8M9C5*****7891",
+        "vinLast4": "7891",
+        "exteriorColor": "Isle of Man Green",
+        "interiorColor": "Merino Leather Black",
+        "mileage": 215,
+        "condition": "new",
+        "bodyStyle": "Coupe"
+      },
+      "pricing": {
+        "msrp": 88900,
+        "sellingPrice": 81500,
+        "discount": 7400,
+        "discountPercent": 8.3
+      },
+      "inventory": {
+        "stockNumber": "BMW240567",
+        "daysInStock": 98,
+        "dateAdded": "2024-08-01"
+      },
+      "features": [
+        "M Carbon Bucket Seats",
+        "M Driver's Package",
+        "Harman Kardon Audio",
+        "Laser Headlights"
+      ],
+      "photos": [
+        "/placeholder-bmw-m4.jpg"
+      ],
+      "dealHeatScore": 85,
+      "unlocked": false,
+      "views": 62,
+      "unlockCount": 5,
+      "createdAt": "2024-08-01T09:15:00Z",
+      "updatedAt": "2024-11-02T11:45:00Z"
+    },
+    {
+      "id": "L003",
+      "dealerId": "D003",
+      "dealerName": "Anonymous Dealer",
+      "dealerLocation": "Miami, FL",
+      "dealerVerified": true,
+      "status": "active",
+      "vehicle": {
+        "year": 2024,
+        "make": "Mercedes-Benz",
+        "model": "AMG GT",
+        "trim": "63 S 4MATIC+",
+        "vin": "WDDYK8AA*****4521",
+        "vinLast4": "4521",
+        "exteriorColor": "AMG Green Hell Magno",
+        "interiorColor": "Black Nappa Leather",
+        "mileage": 342,
+        "condition": "demo",
+        "bodyStyle": "Sedan"
+      },
+      "pricing": {
+        "msrp": 164900,
+        "sellingPrice": 149900,
+        "discount": 15000,
+        "discountPercent": 9.1
+      },
+      "inventory": {
+        "stockNumber": "MB240892",
+        "daysInStock": 176,
+        "dateAdded": "2024-05-15"
+      },
+      "features": [
+        "AMG Performance Exhaust",
+        "AMG Night Package",
+        "Burmester 3D Audio",
+        "AMG Track Pace"
+      ],
+      "photos": [
+        "/placeholder-amg-gt.jpg"
+      ],
+      "dealHeatScore": 94,
+      "unlocked": false,
+      "views": 89,
+      "unlockCount": 8,
+      "createdAt": "2024-05-15T13:20:00Z",
+      "updatedAt": "2024-11-03T16:30:00Z"
+    },
+    {
+      "id": "L004",
+      "dealerId": "D001",
+      "dealerName": "Anonymous Dealer",
+      "dealerLocation": "Bay Area, CA",
+      "dealerVerified": true,
+      "status": "active",
+      "vehicle": {
+        "year": 2024,
+        "make": "Porsche",
+        "model": "Taycan",
+        "trim": "Turbo S",
+        "vin": "WP0AD2A7*****6789",
+        "vinLast4": "6789",
+        "exteriorColor": "Frozen Blue Metallic",
+        "interiorColor": "Slate Grey/Atacama Beige",
+        "mileage": 89,
+        "condition": "new",
+        "bodyStyle": "Sedan"
+      },
+      "pricing": {
+        "msrp": 189900,
+        "sellingPrice": 174900,
+        "discount": 15000,
+        "discountPercent": 7.9
+      },
+      "inventory": {
+        "stockNumber": "P2401567",
+        "daysInStock": 132,
+        "dateAdded": "2024-06-28"
+      },
+      "features": [
+        "Performance Battery Plus",
+        "Adaptive Air Suspension",
+        "Burmester 3D Audio",
+        "Matrix LED Headlights"
+      ],
+      "photos": [
+        "/placeholder-taycan.jpg"
+      ],
+      "dealHeatScore": 88,
+      "unlocked": false,
+      "views": 73,
+      "unlockCount": 6,
+      "createdAt": "2024-06-28T10:00:00Z",
+      "updatedAt": "2024-11-04T09:15:00Z"
+    },
+    {
+      "id": "L005",
+      "dealerId": "D004",
+      "dealerName": "Anonymous Dealer",
+      "dealerLocation": "Scottsdale, AZ",
+      "dealerVerified": true,
+      "status": "active",
+      "vehicle": {
+        "year": 2024,
+        "make": "Audi",
+        "model": "RS 6 Avant",
+        "trim": "Performance",
+        "vin": "WAUZZZ4G*****1234",
+        "vinLast4": "1234",
+        "exteriorColor": "Daytona Gray Pearl",
+        "interiorColor": "Black Valcona Leather",
+        "mileage": 456,
+        "condition": "demo",
+        "bodyStyle": "Wagon"
+      },
+      "pricing": {
+        "msrp": 129900,
+        "sellingPrice": 118900,
+        "discount": 11000,
+        "discountPercent": 8.5
+      },
+      "inventory": {
+        "stockNumber": "AU240345",
+        "daysInStock": 112,
+        "dateAdded": "2024-07-18"
+      },
+      "features": [
+        "Carbon Optic Package",
+        "Dynamic Ride Control",
+        "Bang & Olufsen 3D Audio",
+        "RS Sport Exhaust"
+      ],
+      "photos": [
+        "/placeholder-rs6.jpg"
+      ],
+      "dealHeatScore": 87,
+      "unlocked": false,
+      "views": 54,
+      "unlockCount": 4,
+      "createdAt": "2024-07-18T14:30:00Z",
+      "updatedAt": "2024-11-05T12:00:00Z"
+    },
+    {
+      "id": "L006",
+      "dealerId": "D005",
+      "dealerName": "Anonymous Dealer",
+      "dealerLocation": "Atlanta, GA",
+      "dealerVerified": true,
+      "status": "active",
+      "vehicle": {
+        "year": 2024,
+        "make": "Chevrolet",
+        "model": "Corvette",
+        "trim": "Z06 3LZ",
+        "vin": "1G1YY2D4*****5678",
+        "vinLast4": "5678",
+        "exteriorColor": "Hypersonic Gray Metallic",
+        "interiorColor": "Jet Black w/ Red Stitching",
+        "mileage": 178,
+        "condition": "new",
+        "bodyStyle": "Coupe"
+      },
+      "pricing": {
+        "msrp": 128900,
+        "sellingPrice": 119900,
+        "discount": 9000,
+        "discountPercent": 7.0
+      },
+      "inventory": {
+        "stockNumber": "CV240789",
+        "daysInStock": 94,
+        "dateAdded": "2024-08-05"
+      },
+      "features": [
+        "Z07 Performance Package",
+        "Carbon Fiber Ground Effects",
+        "Bose Premium Audio",
+        "Magnetic Ride Control 4.0"
+      ],
+      "photos": [
+        "/placeholder-corvette.jpg"
+      ],
+      "dealHeatScore": 83,
+      "unlocked": false,
+      "views": 98,
+      "unlockCount": 11,
+      "createdAt": "2024-08-05T11:00:00Z",
+      "updatedAt": "2024-11-06T15:45:00Z"
+    },
+    {
+      "id": "L007",
+      "dealerId": "D006",
+      "dealerName": "Anonymous Dealer",
+      "dealerLocation": "Seattle, WA",
+      "dealerVerified": true,
+      "status": "active",
+      "vehicle": {
+        "year": 2024,
+        "make": "Lexus",
+        "model": "LC",
+        "trim": "500 Inspiration Series",
+        "vin": "JTHHP5BC*****9012",
+        "vinLast4": "9012",
+        "exteriorColor": "Nori Green Pearl",
+        "interiorColor": "Toasted Caramel Semi-Aniline",
+        "mileage": 234,
+        "condition": "demo",
+        "bodyStyle": "Coupe"
+      },
+      "pricing": {
+        "msrp": 109900,
+        "sellingPrice": 99900,
+        "discount": 10000,
+        "discountPercent": 9.1
+      },
+      "inventory": {
+        "stockNumber": "LX240456",
+        "daysInStock": 158,
+        "dateAdded": "2024-06-02"
+      },
+      "features": [
+        "Mark Levinson Audio",
+        "Adaptive Variable Suspension",
+        "21-inch Forged Wheels",
+        "Active Rear Steering"
+      ],
+      "photos": [
+        "/placeholder-lc500.jpg"
+      ],
+      "dealHeatScore": 91,
+      "unlocked": false,
+      "views": 41,
+      "unlockCount": 2,
+      "createdAt": "2024-06-02T16:20:00Z",
+      "updatedAt": "2024-11-07T10:30:00Z"
+    },
+    {
+      "id": "L008",
+      "dealerId": "D007",
+      "dealerName": "Anonymous Dealer",
+      "dealerLocation": "Denver, CO",
+      "dealerVerified": true,
+      "status": "active",
+      "vehicle": {
+        "year": 2024,
+        "make": "Maserati",
+        "model": "MC20",
+        "trim": "Cielo",
+        "vin": "ZAM45MLA*****3456",
+        "vinLast4": "3456",
+        "exteriorColor": "Bianco Audace",
+        "interiorColor": "Black/Ice Leather",
+        "mileage": 312,
+        "condition": "demo",
+        "bodyStyle": "Convertible"
+      },
+      "pricing": {
+        "msrp": 249900,
+        "sellingPrice": 229900,
+        "discount": 20000,
+        "discountPercent": 8.0
+      },
+      "inventory": {
+        "stockNumber": "MA240123",
+        "daysInStock": 187,
+        "dateAdded": "2024-05-03"
+      },
+      "features": [
+        "Carbon Fiber Retractable Glass Roof",
+        "Sonus Faber Audio",
+        "Forged Wheels",
+        "MTC 2.0 Launch Control"
+      ],
+      "photos": [
+        "/placeholder-mc20.jpg"
+      ],
+      "dealHeatScore": 95,
+      "unlocked": false,
+      "views": 115,
+      "unlockCount": 14,
+      "createdAt": "2024-05-03T09:45:00Z",
+      "updatedAt": "2024-11-08T13:15:00Z"
+    }
+  ],
+  "dealers": [
+    {
+      "id": "D001",
+      "businessName": "Premium Motors Bay Area",
+      "dba": "Anonymous Dealer",
+      "email": "dealer@premiumbaymotors.com",
+      "phone": "+1-415-555-0123",
+      "address": {
+        "street": "123 Luxury Lane",
+        "city": "San Francisco",
+        "state": "CA",
+        "zip": "94102",
+        "displayLocation": "Bay Area, CA"
+      },
+      "verified": true,
+      "status": "active",
+      "subscriptionTier": "pro",
+      "listings": ["L001", "L004"],
+      "totalUnlocks": 9,
+      "createdAt": "2024-05-01T10:00:00Z"
+    },
+    {
+      "id": "D002",
+      "businessName": "Dallas Luxury Auto",
+      "dba": "Anonymous Dealer",
+      "email": "sales@dallasluxuryauto.com",
+      "phone": "+1-214-555-0456",
+      "address": {
+        "street": "456 Performance Parkway",
+        "city": "Dallas",
+        "state": "TX",
+        "zip": "75201",
+        "displayLocation": "Dallas, TX"
+      },
+      "verified": true,
+      "status": "active",
+      "subscriptionTier": "basic",
+      "listings": ["L002"],
+      "totalUnlocks": 5,
+      "createdAt": "2024-06-15T14:30:00Z"
+    }
+  ]
+}
