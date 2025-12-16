@@ -17,7 +17,7 @@ const PricingPage = () => {
         </div>
 
         {/* Buyer Pricing */}
-        <div className="mb-20">
+        <div className="mb-20 overflow-visible">
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-4">
             For Buyers
           </h2>
@@ -25,7 +25,7 @@ const PricingPage = () => {
             Get time-based access to unlock any deal on the marketplace
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto pt-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto pt-8 overflow-visible">
             {/* 3-Day Access */}
             <div className="card p-8 mt-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-2">
@@ -165,7 +165,7 @@ const PricingPage = () => {
         </div>
 
         {/* Dealer Pricing */}
-        <div className="mb-20">
+        <div className="mb-20 overflow-visible">
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-4">
             For Dealers
           </h2>
@@ -173,7 +173,7 @@ const PricingPage = () => {
             Get access to serious, paid buyers
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto pt-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto pt-8 overflow-visible">
             {/* Free Tier */}
             <div className="card p-8 mt-8">
               <div className="flex items-center justify-center mb-4">
