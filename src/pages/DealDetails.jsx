@@ -273,12 +273,10 @@ const DealDetails = () => {
                 </button>
               </div>
 
-              {/* 7-Day Pass - Popular */}
+              {/* 7-Day Pass */}
               <div className="border-2 border-primary-600 rounded-lg p-4 relative">
-                <div className="absolute -top-2 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-primary-600 text-white px-2 py-0.5 rounded-full text-xs font-semibold">
-                    Popular
-                  </span>
+                <div className="absolute top-2 right-2">
+                  <Flame className="h-5 w-5 text-orange-500" />
                 </div>
                 <h4 className="font-bold text-gray-900 mb-1">7-Day Access</h4>
                 <div className="text-2xl font-bold text-gray-900 mb-2">$79.99</div>

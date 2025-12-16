@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { CheckCircle, X, Star, Zap, Building2 } from 'lucide-react'
+import { CheckCircle, X, Star, Zap, Building2, Flame } from 'lucide-react'
 
 const PricingPage = () => {
   return (
@@ -63,14 +63,12 @@ const PricingPage = () => {
               </Link>
             </div>
 
-            {/* 7-Day Access - Most Popular */}
+            {/* 7-Day Access */}
             <div className="card p-8 border-2 border-primary-600 relative mt-8">
-              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-10">
-                <span className="bg-primary-600 text-white px-4 py-1 rounded-full text-sm font-semibold whitespace-nowrap">
-                  Most Popular
-                </span>
+              <div className="absolute top-3 right-3">
+                <Flame className="h-6 w-6 text-orange-500" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2 mt-2">
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">
                 7-Day Access
               </h3>
               <div className="mb-6">
@@ -215,14 +213,12 @@ const PricingPage = () => {
               </Link>
             </div>
 
-            {/* Pro Tier - Recommended */}
+            {/* Pro Tier */}
             <div className="card p-8 border-2 border-primary-600 relative mt-8">
-              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-10">
-                <span className="bg-primary-600 text-white px-4 py-1 rounded-full text-sm font-semibold whitespace-nowrap">
-                  Recommended
-                </span>
+              <div className="absolute top-3 right-3">
+                <Flame className="h-6 w-6 text-orange-500" />
               </div>
-              <div className="flex items-center justify-center mb-4 mt-2">
+              <div className="flex items-center justify-center mb-4">
                 <Zap className="h-8 w-8 text-primary-600" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-2 text-center">
