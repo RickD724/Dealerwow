@@ -1,5 +1,5 @@
-import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import { AppProvider } from './context/AppContext'
 
 // Layout
@@ -24,10 +24,22 @@ import AboutPage from './pages/AboutPage'
 import HowItWorks from './pages/HowItWorks'
 import PricingPage from './pages/PricingPage'
 
+// Scroll to top component
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+  
+  return null
+}
+
 function App() {
   return (
     <AppProvider>
       <Router>
+        <ScrollToTop />
         <div className="flex flex-col min-h-screen bg-gray-50">
           <Header />
           <main className="flex-grow">

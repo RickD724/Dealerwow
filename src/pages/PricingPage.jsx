@@ -27,7 +27,7 @@ const PricingPage = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto pt-8">
             {/* 3-Day Access */}
-            <div className="card p-8">
+            <div className="card p-8 mt-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-2">
                 3-Day Access
               </h3>
@@ -110,7 +110,8 @@ const PricingPage = () => {
             </div>
 
             {/* 14-Day Access */}
-            <div className="card p-8">
+            {/* 14-Day Access */}
+            <div className="card p-8 mt-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-2">
                 14-Day Access
               </h3>
@@ -174,7 +175,7 @@ const PricingPage = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto pt-8">
             {/* Free Tier */}
-            <div className="card p-8">
+            <div className="card p-8 mt-8">
               <div className="flex items-center justify-center mb-4">
                 <Star className="h-8 w-8 text-gray-400" />
               </div>
@@ -269,7 +270,7 @@ const PricingPage = () => {
             </div>
 
             {/* Enterprise Tier */}
-            <div className="card p-8">
+            <div className="card p-8 mt-8">
               <div className="flex items-center justify-center mb-4">
                 <Building2 className="h-8 w-8 text-purple-600" />
               </div>

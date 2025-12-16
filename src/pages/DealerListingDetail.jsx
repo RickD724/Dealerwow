@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useApp } from '../context/AppContext';
 import { ArrowLeft, Eye, Unlock, TrendingUp, Edit, Pause, Check, DollarSign } from 'lucide-react';
@@ -7,6 +7,11 @@ const DealerListingDetail = () => {
   const { id } = useParams();
   const { getListingById } = useApp();
   const listing = getListingById(id);
+
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
 
   if (!listing) {
     return (

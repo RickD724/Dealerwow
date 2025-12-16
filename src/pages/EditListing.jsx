@@ -33,6 +33,7 @@ const EditListing = () => {
   const [notes, setNotes] = useState('');
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     if (listing) {
       setFormData({
         year: listing.vehicle.year,

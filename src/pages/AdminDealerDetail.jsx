@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useApp } from '../context/AppContext';
 import { 
@@ -13,6 +13,11 @@ const AdminDealerDetail = () => {
 
   const [notes, setNotes] = useState('');
   const [isSuspended, setIsSuspended] = useState(false);
+
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
 
   if (!dealer) {
     return (
